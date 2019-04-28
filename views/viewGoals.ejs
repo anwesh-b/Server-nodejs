@@ -11,6 +11,9 @@
             <li class="goals"> 
                 <%=goals[i].title%>
             </li>
+            <form action="/form/<%=goals[i]._id%>?_method=DELETE" method="POST">
+                <button type="submit" onclick="return confirmDelete()">Delete</button>
+            </form>
         <% } %>
     </ol>
         <!-- <ol class='goals'>{}
@@ -20,4 +23,9 @@
         <li>Goal</li>
     </ol> -->
 </div>
+<script>
+    function confirmDelete(){
+        return confirm("Are you sure ?");
+    }
+</script>
 <% include partials/footer.ejs %>

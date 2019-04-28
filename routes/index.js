@@ -11,6 +11,8 @@ Router.get("/form",indexController.form);
 
 Router.post("/form",indexController.formSubmit);
 
+Router.delete("/form/:id",indexController.delGoal);
+
 Router.post("/formSubmit",indexController.formSubmit);
 
 Router.get("/viewGoals",indexController.viewGoals);
