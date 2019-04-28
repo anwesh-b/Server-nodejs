@@ -1,14 +1,14 @@
 <% include partials/header.ejs %>
 <br>
 <ol>
-    <%for(var i=0;i<names.length;i++)
+    <%for(var i=0;i<title.length;i++)
     { %>
         <li> 
-            <%= names[i]%>
+            <%= title[i]%>
         </li>
     <% } %>
 </ol>
 <script>
-alert('Hi <%=names[0]%>')
+alert('Hi <%=title[0]%>')
 </script>
 <% include partials/footer.ejs %>

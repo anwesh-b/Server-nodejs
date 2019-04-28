@@ -1,0 +1,23 @@
+<% include partials/header.ejs %>
+
+<h1>
+    Hey , here is your list of goals
+</h1>
+
+<div>
+    <ol>
+        <%for(var i=0;i<goals.length;i++)
+        { %>
+            <li class="goals"> 
+                <%=goals[i].title%>
+            </li>
+        <% } %>
+    </ol>
+        <!-- <ol class='goals'>{}
+        <%goals.map(function(goal){%>
+            <li><%=goal.title%><br></li>
+        <% })%>
+        <li>Goal</li>
+    </ol> -->
+</div>
+<% include partials/footer.ejs %>

@@ -9,7 +9,11 @@ Router.get("/help",indexController.helppp);
 
 Router.get("/form",indexController.form);
 
+Router.post("/form",indexController.formSubmit);
+
 Router.post("/formSubmit",indexController.formSubmit);
+
+Router.get("/viewGoals",indexController.viewGoals);
 
 module.exports = Router;
 
