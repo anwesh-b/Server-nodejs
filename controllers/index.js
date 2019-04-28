@@ -16,7 +16,7 @@ exports.form=(req,res)=>{
     res.render("form.ejs");
 }
 
-exports.formSubmit=(req,res)=>{
+exports.formSubmit=(req,res,next)=>{
     names.push(req.body.Name);
-    res.send("Name: "+names);
+    res.render("formsubmit.ejs",{names});
 }

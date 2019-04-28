@@ -1,0 +1,16 @@
+<a href="/">Homepage</a><br>
+<a href="/about">About</a><br>
+<a href="/help">Help</a><br>
+<a href="/form">Form</a>
+<br>Hi 
+<ol>
+    <%for(var i=0;i<names.length;i++)
+    { %>
+        <li> 
+            <%= names[i]%>
+        </li>
+    <% } %>
+</ol>
+<script>
+alert('Hi'+<%="names[0]"%>)
+</script>
