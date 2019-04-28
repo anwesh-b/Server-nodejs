@@ -37,5 +37,5 @@ exports.viewGoals=async(req,res)=>{
 exports.delGoal=async(req,res)=>{
     // res.send("You will delete"+req.params.id)
     await Goal.remove({_id:req.params.id});
-    res.redirect("viewGoals.ejs");
+    res.redirect("/viewGoals");
 }
