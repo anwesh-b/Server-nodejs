@@ -1,8 +1,5 @@
-<a href="/">Homepage</a><br>
-<a href="/about">About</a><br>
-<a href="/help">Help</a><br>
-<a href="/form">Form</a>
-<br>Hi 
+<% include partials/header.ejs %>
+<br>
 <ol>
     <%for(var i=0;i<names.length;i++)
     { %>
@@ -12,5 +9,6 @@
     <% } %>
 </ol>
 <script>
-alert('Hi'+<%="names[0]"%>)
+alert('Hi <%=names[0]%>')
 </script>
+<% include partials/footer.ejs %>
